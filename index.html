@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Into the Unknown Tours</title>
+    <meta name="description" content="Into the Unknown Tours — Don't just travel, Explore & Experience the Unknown. Authentic guided tours, chauffeurs, car rentals, city tours, group adventures, vacation planning, hiking and more." />
+    <meta name="theme-color" content="#0ea5e9" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+
+    <meta property="og:title" content="Into the Unknown Tours" />
+    <meta property="og:description" content="Authentic guided tours, city breaks, private chauffeurs, car rentals, hiking and more." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:image" content="/assets/og-image.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Into the Unknown Tours" />
+    <meta name="twitter:description" content="Don't just travel, Explore & Experience the Unknown." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: '#0ea5e9'
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="bg-white text-slate-700 antialiased relative overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="relative">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <a href="#home" class="flex items-center gap-3 group">
+          <img src="/assets/logo.jpg" alt="Into the Unknown Tours logo" class="h-9 w-9 rounded-full object-cover ring-1 ring-sky-100" />
+          <span class="font-extrabold tracking-tight text-lg sm:text-xl">Into the Unknown Tours</span>
+        </a>
+
+        <button id="navToggle" aria-expanded="false" class="md:hidden inline-flex items-center justify-center rounded-md px-3 py-2 text-slate-600 ring-1 ring-slate-200 hover:bg-slate-50 transition">
+          <span class="sr-only">Open menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+        <ul id="desktopNav" class="hidden md:flex items-center gap-7 text-sm text-slate-600">
+          <li><a href="#services" class="hover:text-slate-900 transition">Services</a></li>
+          <li><a href="#gallery" class="hover:text-slate-900 transition">Gallery</a></li>
+          <li><a href="#about" class="hover:text-slate-900 transition">About</a></li>
+          <li><a href="#faq" class="hover:text-slate-900 transition">FAQ</a></li>
+          <li><a href="#contact" class="hover:text-slate-900 transition">Contact</a></li>
+          <li>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-4 py-2 text-sm font-semibold text-white ring-1 ring-sky-600 hover:bg-sky-700 transition">
+              Book Now
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="md:hidden hidden px-6 pb-4">
+        <div class="rounded-2xl bg-white ring-1 ring-slate-200 p-4">
+          <a href="#services" class="block py-2 text-slate-700 hover:text-sky-700">Services</a>
+          <a href="#gallery" class="block py-2 text-slate-700 hover:text-sky-700">Gallery</a>
+          <a href="#about" class="block py-2 text-slate-700 hover:text-sky-700">About</a>
+          <a href="#faq" class="block py-2 text-slate-700 hover:text-sky-700">FAQ</a>
+          <a href="#contact" class="block py-2 text-slate-700 hover:text-sky-700">Contact</a>
+          <a href="#contact" class="mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-sky-600 px-4 py-2 font-semibold text-white ring-1 ring-sky-600 hover:bg-sky-700">Book Now</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative">
+      <div class="absolute inset-0 -z-10">
+        <div class="h-full w-full bg-[url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 bg-white/60"></div>
+      </div>
+      <div class="mx-auto max-w-7xl px-6 py-20 sm:py-28">
+        <div class="grid items-center gap-10 md:grid-cols-2">
+          <div class="max-w-3xl">
+            <p class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-xs font-medium text-slate-700 ring-1 ring-slate-200">
+              <span class="inline-block h-2 w-2 rounded-full bg-sky-500 animate-pulse"></span>
+              Dream. Discover. Wander.
+            </p>
+            <h1 class="mt-6 text-4xl sm:text-6xl font-extrabold leading-[1.1] text-slate-900">
+              Into the <span class="text-sky-600">Unknown</span>
+              Tours
+            </h1>
+            <p class="mt-6 text-lg text-slate-700 max-w-2xl">
+              Don't just travel, <span class="text-sky-700 font-semibold">Explore & Experience the Unknown</span>.
+              Bespoke journeys, private tours, and unforgettable moments crafted for the curious.
+            </p>
+            <div class="mt-10 flex flex-wrap items-center gap-4">
+              <a href="#services" class="inline-flex items-center gap-2 rounded-full bg-sky-600 px-6 py-3 text-white ring-1 ring-sky-600 hover:bg-sky-700 transition">
+                Explore Tours
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                </svg>
+              </a>
+              <a href="#contact" class="inline-flex items-center gap-2 rounded-full px-6 py-3 text-slate-700 hover:text-slate-900 transition">
+                Contact Us
+              </a>
+            </div>
+          </div>
+          <div class="mt-10 md:mt-0 flex justify-center md:justify-end md:mr-8">
+            <div id="heroLogo" class="relative will-change-transform">
+              <div class="sun-rays"></div>
+              <div class="sun-halo"></div>
+              <div class="relative rounded-full p-3 bg-gradient-to-br from-yellow-200/70 to-amber-200/70 shadow-[0_16px_48px_rgba(252,211,77,0.45)]">
+                <img src="/assets/logo.jpg" alt="Into the Unknown Tours logo" class="h-64 w-64 rounded-full object-cover ring-4 ring-white shadow-2xl" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div aria-hidden="true" class="relative">
+      <svg class="block w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path fill="#f1f5f9" d="M0,32L60,37.3C120,43,240,53,360,53.3C480,53,600,43,720,42.7C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"></path>
+      </svg>
+    </div>
+
+    <!-- Services -->
+    <section id="services" class="relative bg-slate-50">
+      <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Our Services</h2>
+          <p class="mt-3 text-slate-600">Handcrafted experiences and seamless logistics for every kind of explorer.</p>
+        </div>
+
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <!-- Card template repeated -->
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3>Tour Escort</h3>
+            <p>Dedicated guides for seamless, story-rich adventures.</p>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 13l2-2 4 4L21 5l2 2-14 14-6-6z"/></svg>
+            </div>
+            <h3>Car Rentals</h3>
+            <p>Comfortable vehicles for self-paced exploration.</p>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3l9 4.5-9 4.5L3 7.5 12 3zm0 9l9 4.5-9 4.5L3 16.5 12 12z"/></svg>
+            </div>
+            <h3>Private Tours</h3>
+            <p>Tailored itineraries designed around your passions.</p>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a10 10 0 100 20 10 10 0 000-20zm.5 5v5l3.5 2"/></svg>
+            </div>
+            <h3>City Tour</h3>
+            <p>Iconic highlights and hidden gems, all in one sweep.</p>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 7h10M7 12h8m-8 5h6"/></svg>
+            </div>
+            <h3>Chauffeur</h3>
+            <p>Professional drivers for stress-free travel days.</p>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a6 6 0 10-12 0v2h5m-6 0v-2a10 10 0 1120 0v2"/></svg>
+            </div>
+            <h3>Group Tours</h3>
+            <p>Shared adventures that spark new friendships.</p>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7l9-4 9 4-9 4-9-4zm9 4l9-4v10l-9 4-9-4V7l9 4z"/></svg>
+            </div>
+            <h3>Vacation Planning</h3>
+            <p>End-to-end planning for effortless escapes.</p>
+          </div>
+
+          <div class="service-card" data-reveal>
+            <div class="icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" class="icon"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 20l8-16 8 16M4 20h16"/></svg>
+            </div>
+            <h3>Hiking</h3>
+            <p>Guided treks through awe-inspiring landscapes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Gallery</h2>
+          <p class="mt-3 text-slate-600">Moments from our park and garden adventures.</p>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <a href="#" class="gallery-card group" data-reveal>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-slate-200">
+              <img src="/assets/photo_1.jpg" alt="Gallery photo 1" class="h-full w-full object-cover" />
+            </div>
+          </a>
+          <a href="#" class="gallery-card group" data-reveal>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-slate-200">
+              <img src="/assets/photo_2.jpg" alt="Gallery photo 2" class="h-full w-full object-cover" />
+            </div>
+          </a>
+          <a href="#" class="gallery-card group" data-reveal>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-slate-200">
+              <img src="/assets/photo_3.jpg" alt="Gallery photo 3" class="h-full w-full object-cover" />
+            </div>
+          </a>
+          <a href="#" class="gallery-card group" data-reveal>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-slate-200">
+              <img src="/assets/photo_4.jpg" alt="Gallery photo 4" class="h-full w-full object-cover" />
+            </div>
+          </a>
+          <a href="#" class="gallery-card group" data-reveal>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-slate-200">
+              <img src="/assets/photo_5.jpg" alt="Gallery photo 5" class="h-full w-full object-cover" />
+            </div>
+          </a>
+          <a href="#" class="gallery-card group" data-reveal>
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-xl ring-1 ring-slate-200">
+              <img src="/assets/photo_6.jpg" alt="Gallery photo 6" class="h-full w-full object-cover" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20">
+        <div class="grid gap-10 lg:grid-cols-2 items-center">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">About Us</h2>
+            <p class="mt-4 text-slate-600 leading-relaxed">
+              We create journeys that feel like lucid dreams — carefully planned,
+              effortlessly delivered, and brimming with wonder. From bespoke
+              private tours to epic group expeditions, our team crafts every
+              detail so you can simply explore.
+            </p>
+            <div class="mt-6 grid grid-cols-2 gap-4 text-sm text-slate-600">
+              <div class="rounded-xl bg-white p-4 border border-slate-200">
+                <p class="text-2xl font-bold text-slate-900">10k+</p>
+                <p>Happy Travelers</p>
+              </div>
+              <div class="rounded-xl bg-white p-4 border border-slate-200">
+                <p class="text-2xl font-bold text-slate-900">50+</p>
+                <p>Unique Routes</p>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="aspect-[4/3] w-full overflow-hidden rounded-2xl ring-1 ring-slate-200 shadow-sm">
+              <img src="/assets/logo.jpg" alt="About Into the Unknown Tours" class="h-full w-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="relative bg-slate-50">
+      <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">What travelers say</h2>
+          <p class="mt-3 text-slate-600">Real stories from recent trips.</p>
+        </div>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl bg-white p-6 border border-slate-200" data-reveal>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-semibold">AL</div>
+              <div>
+                <p class="font-semibold text-slate-900">Amira L.</p>
+                <p class="text-xs text-slate-500">Private Garden Tour</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600">The park walk was stunning and our guide made the city feel like home.</p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 border border-slate-200" data-reveal>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-semibold">JR</div>
+              <div>
+                <p class="font-semibold text-slate-900">Jamal R.</p>
+                <p class="text-xs text-slate-500">City + Parks Combo</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600">Effortless logistics and gorgeous views. Booking again for the hiking season!</p>
+          </div>
+          <div class="rounded-2xl bg-white p-6 border border-slate-200" data-reveal>
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 rounded-full bg-sky-100 text-sky-700 flex items-center justify-center font-semibold">SK</div>
+              <div>
+                <p class="font-semibold text-slate-900">Sara K.</p>
+                <p class="text-xs text-slate-500">Family Vacation Planning</p>
+              </div>
+            </div>
+            <p class="mt-4 text-slate-600">They planned everything perfectly. The gardens were a highlight for our kids.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section id="cta" class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-12">
+        <div class="rounded-3xl bg-gradient-to-r from-sky-600 to-cyan-500 px-8 py-10 text-white shadow-lg" data-reveal>
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+              <h3 class="text-2xl font-bold">Ready to Explore the Unknown?</h3>
+              <p class="text-sky-100 mt-1">Parks, gardens, and hidden city gems—crafted just for you.</p>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-sky-700 hover:bg-sky-50">
+              Plan Your Trip
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="relative bg-slate-50">
+      <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Frequently Asked Questions</h2>
+          <p class="mt-3 text-slate-600">Everything you need to know before you go.</p>
+        </div>
+        <div class="mt-8 max-w-3xl">
+          <div class="border-b border-slate-200 py-4 faq-item" data-reveal>
+            <button class="w-full text-left flex items-center justify-between gap-4 faq-toggle" aria-expanded="false">
+              <span class="font-semibold text-slate-900">What should I bring on a park or garden tour?</span>
+              <svg class="h-5 w-5 text-slate-500 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="mt-2 pr-8 hidden text-slate-600">Comfortable shoes, water, light snacks, and weather-appropriate clothing.</div>
+          </div>
+          <div class="border-b border-slate-200 py-4 faq-item" data-reveal>
+            <button class="w-full text-left flex items-center justify-between gap-4 faq-toggle" aria-expanded="false">
+              <span class="font-semibold text-slate-900">Do you offer custom itineraries for families?</span>
+              <svg class="h-5 w-5 text-slate-500 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="mt-2 pr-8 hidden text-slate-600">Yes! We tailor routes, breaks, and activities to fit your group's needs.</div>
+          </div>
+          <div class="border-b border-slate-200 py-4 faq-item" data-reveal>
+            <button class="w-full text-left flex items-center justify-between gap-4 faq-toggle" aria-expanded="false">
+              <span class="font-semibold text-slate-900">Can I book a chauffeur for the whole day?</span>
+              <svg class="h-5 w-5 text-slate-500 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="mt-2 pr-8 hidden text-slate-600">Absolutely. Day rates are available—tell us your plans and we’ll arrange it.</div>
+          </div>
+          <div class="border-b border-slate-200 py-4 faq-item" data-reveal>
+            <button class="w-full text-left flex items-center justify-between gap-4 faq-toggle" aria-expanded="false">
+              <span class="font-semibold text-slate-900">How far in advance should I book?</span>
+              <svg class="h-5 w-5 text-slate-500 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="mt-2 pr-8 hidden text-slate-600">Peak seasons fill quickly—book 2–4 weeks ahead when possible.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-14 sm:py-20">
+        <div class="max-w-2xl">
+          <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Get in touch</h2>
+          <p class="mt-3 text-slate-600">Tell us about your dream trip — we’ll make it real.</p>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-3">
+          <form id="contactForm" class="lg:col-span-2 rounded-2xl bg-white p-6 border border-slate-200">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="block text-sm text-slate-700">Name</label>
+                <input type="text" name="name" required class="mt-1 w-full rounded-xl bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400" placeholder="Your name" />
+              </div>
+              <div>
+                <label class="block text-sm text-slate-700">Email</label>
+                <input type="email" name="email" required class="mt-1 w-full rounded-xl bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div class="mt-4">
+              <label class="block text-sm text-slate-700">Message</label>
+              <textarea name="message" rows="5" required class="mt-1 w-full rounded-xl bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-sky-400" placeholder="Where to? When? How many travelers?"></textarea>
+            </div>
+            <div class="mt-6 flex items-center gap-4">
+              <button type="submit" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 px-6 py-3 font-semibold text-white ring-1 ring-sky-600 hover:bg-sky-700">
+                Send Message
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3 4l18 8-18 8 3-8zm0 0l7.5 4.5M6 12l7.5-4.5" />
+                </svg>
+              </button>
+              <p class="text-sm text-slate-500">Or email us at <a href="mailto:hello@unknown.tours" class="underline underline-offset-4 hover:text-sky-700">hello@unknown.tours</a></p>
+            </div>
+          </form>
+
+          <div class="rounded-2xl bg-white p-6 border border-slate-200">
+            <h3 class="text-slate-900 font-semibold">Quick Info</h3>
+            <ul class="mt-3 space-y-2 text-slate-600 text-sm">
+              <li>Hours: Mon–Sat, 9am–7pm</li>
+              <li>Phone: +1 (555) 012-3456</li>
+              <li>HQ: Somewhere between here and the horizon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative border-t border-slate-200">
+      <div class="mx-auto max-w-7xl px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+        <p>© <span id="year"></span> Into the Unknown Tours. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#services" class="hover:text-slate-900">Services</a>
+          <a href="#gallery" class="hover:text-slate-900">Gallery</a>
+          <a href="#about" class="hover:text-slate-900">About</a>
+          <a href="#faq" class="hover:text-slate-900">FAQ</a>
+          <a href="#contact" class="hover:text-slate-900">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+  </html>
+
+

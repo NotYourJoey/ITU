@@ -1,0 +1,123 @@
+/*
+  Custom styles for cards and light tourist theme accents
+  Tailwind handles most layout/typography
+*/
+
+:root {
+  --tw-ring-color: rgba(2, 132, 199, 0.25);
+}
+
+/* Service card styling composed with Tailwind classes */
+.service-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(226, 232, 240, 1);
+  color: #0f172a;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  box-shadow: 0 1px 2px rgba(2, 6, 23, 0.04);
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(2, 132, 199, 0.15);
+}
+.service-card h3 {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+.service-card p {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  color: #475569;
+}
+.service-card .icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(2, 132, 199, 0.12), rgba(56, 189, 248, 0.12));
+  border: 1px solid rgba(186, 230, 253, 1);
+}
+.service-card .icon {
+  height: 20px;
+  width: 20px;
+  color: #0284c7;
+}
+
+/* Reveal animations */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 700ms ease, transform 700ms ease;
+}
+[data-reveal].revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gallery hover */
+.gallery-card img {
+  transition: transform 500ms ease, filter 500ms ease;
+}
+.gallery-card:hover img {
+  transform: scale(1.05);
+  filter: saturate(1.1);
+}
+
+/* FAQ */
+.faq-item[open] .faq-toggle svg {
+  transform: rotate(45deg);
+}
+
+/* Remove starfield-specific tweaks in light theme */
+
+/* Sun halo and rays around hero logo */
+.sun-halo {
+  position: absolute;
+  inset: -26px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(252, 211, 77, 0.55) 0%, rgba(253, 230, 138, 0.45) 35%, rgba(252, 211, 77, 0.2) 55%, rgba(252, 211, 77, 0) 70%);
+  filter: blur(8px);
+  animation: halo-pulse 4s ease-in-out infinite;
+  z-index: -1;
+}
+.sun-rays {
+  position: absolute;
+  inset: -34px;
+  border-radius: 9999px;
+  background: repeating-conic-gradient(rgba(252, 211, 77, 0.55) 0deg 10deg, rgba(252, 211, 77, 0) 10deg 28deg);
+  filter: blur(4px);
+  opacity: 0.95;
+  animation: sun-rotate 14s linear infinite;
+  z-index: -2;
+}
+
+.sun-rays::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 9999px;
+  background: repeating-conic-gradient(rgba(251, 191, 36, 0.8) 0deg 6deg, rgba(251, 191, 36, 0) 6deg 24deg);
+  filter: blur(2px);
+  opacity: 0.65;
+  animation: sun-rotate-rev 22s linear infinite;
+}
+
+@keyframes halo-pulse {
+  0%, 100% { opacity: 0.65; transform: scale(1); }
+  50% { opacity: 0.95; transform: scale(1.06); }
+}
+@keyframes sun-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes sun-rotate-rev {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+

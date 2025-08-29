@@ -120,4 +120,25 @@
   100% { transform: rotate(0deg); }
 }
 
+/* Make sun glow subtler on small screens */
+@media (max-width: 640px) {
+  .sun-halo {
+    opacity: 0.5;
+    inset: -18px;
+    filter: blur(5px);
+    animation-duration: 5s; /* gentler pulse */
+  }
+  .sun-rays {
+    opacity: 0.6;
+    inset: -22px;
+    filter: blur(3px);
+    animation-duration: 18s; /* slower spin */
+  }
+  .sun-rays::after {
+    opacity: 0.45;
+    filter: blur(1.5px);
+    animation-duration: 26s;
+  }
+}
+
 
